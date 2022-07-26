@@ -1,0 +1,7 @@
+.carousel-control-next-icon{
+    background-image: url("/public/img/slider/arrow.png");
+}
+.carousel-control-prev-icon{
+    background-image: url("/public/img/slider/arrow.png");
+    transform: rotate(180deg);
+}

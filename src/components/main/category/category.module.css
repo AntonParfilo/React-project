@@ -1,0 +1,11 @@
+.product_header{
+    background-color: #393939;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+}
+.product_header p{
+    margin: 0;
+}

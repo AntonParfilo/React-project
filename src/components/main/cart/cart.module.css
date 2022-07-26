@@ -1,0 +1,79 @@
+.cart_wrapper{
+    padding-bottom: 50px;
+}
+.cartNoItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart_hedaer{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #393939;
+    padding: 14px 0px;
+    color: #fff;
+}.cart_header span{
+    font-family: BlinkMacSystemFont,-apple-system,Arial,Segoe UI,Roboto,Helvetica,sans-serif;
+    font-size: 25px;
+}
+.cart_header_img{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    fill: #00D7FE;
+    margin-right: 15px;
+}
+.footerRc{
+    position: relative;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px #999999;
+    padding: 20px 15px;
+}
+.footer_pr{
+    max-width: fit-content;
+    display: inline-block;
+}
+.footer_total{
+    margin-left: 30px;
+    font-weight: bold;
+    color: red;
+    max-width: fit-content;
+    display: inline-block;
+}
+.footer_name{
+    width: fit-content;
+    display: inline-block;
+}
+.footer_lastname{
+    width: fit-content;
+    display: inline-block;
+}
+.footer_email{
+    width: fit-content;
+    display: inline-block;
+}
+.footer_phone{
+    width: fit-content;
+    display: inline-block;
+}
+.my_button{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.my_button p{
+    width: fit-content;
+    padding: 10px 20px;
+}
+.hidden{
+    display: none;
+}
+.invalid{
+    border-color: red;
+    box-shadow: 0px 0px 10px red;
+}

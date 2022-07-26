@@ -1,0 +1,30 @@
+.menu_wrapper{
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+.menu{
+    transition: .7s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #393939;
+    padding: 0 20px 20px;
+}
+.menu a{
+    color: #3282E4;
+}
+.menu svg{
+    fill:#fff;
+}
+.menu a:hover{
+    color: #fff !important;
+}
+.open{
+    top:0;
+}
+.close{
+    top: -300px;
+}

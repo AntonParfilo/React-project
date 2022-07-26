@@ -1,0 +1,26 @@
+.but {
+  padding: 10px 20px;
+  background-color: #00d4fb;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.but:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.but:active {
+  box-shadow: 0px 0px 5px #00d4fb;
+}
+@media (max-width: 1250px){
+  .but{
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+}

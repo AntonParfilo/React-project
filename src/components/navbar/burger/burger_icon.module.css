@@ -1,0 +1,10 @@
+.icon_wrapper{
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+@media( min-width: 768px ){
+    .icon_wrapper{
+        display: none;
+    }
+}

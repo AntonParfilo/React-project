@@ -1,0 +1,82 @@
+.catalog_item_name{
+    text-decoration: none;
+    color: black;
+}
+.catalog_item{
+    margin-left: 10px;
+    transition: .1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 7px;
+    max-width: fit-content;
+}
+.item_wrapper{
+    position: relative;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.catalog_item_img{
+    transition: .5s;
+    left: 3px;
+    margin-right: 10px;
+    fill: rgb(88, 88, 88);
+    width: 35px;
+    height: 35px;
+}
+.catalog_item:hover{
+    cursor: pointer;
+}
+.catalog_item:hover .catalog_item_name{
+    transition: .5s;
+    color: #000;
+}
+.catalog_item:hover .catalog_item_img{
+    fill: #00DBFF;
+    width: 30px;
+    height: 30px;
+    top:5px;
+    left: 5px;
+}
+.item_wrapper:hover .square{
+    animation-duration: .5s;
+    animation-name: anim;
+}
+.border{
+    width: 100%;
+    border-bottom: 1px solid #00DBFF;
+    position: relative;
+    left: -500px;
+    position: absolute;
+    bottom: 0;
+}
+.catalog_item:hover .border{
+    animation-name: border;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.catalog_item:not(:hover) .border{
+    animation-duration: 1s;
+    animation-name: borderTwo;
+    animation-fill-mode: forwards;
+}
+@keyframes border{
+    from{
+        
+    }
+    to{
+        border-bottom: 4px solid #00DBFF;
+        left: 0;
+    }
+}
+@keyframes borderTwo{
+    from{
+        left: 0;
+    }
+    to{
+        left: 1000px;
+    }
+}
+

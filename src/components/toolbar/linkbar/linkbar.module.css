@@ -1,0 +1,66 @@
+.linkbar_wrapper{
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.item_wrapper{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.item_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    position: absolute;
+    left: 10px;
+    fill: #fff;
+}
+.square{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #393939;
+}
+.item{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+}
+.item p{
+    margin: 0px 20px;
+    transition: .5s;
+}
+.item:hover{
+    color: #00D4FB;
+    cursor: pointer;
+}
+.item:hover .item_img{
+    fill:#393939;
+    animation-duration: .5s;
+    animation-name: anim;
+}
+.item:hover .square{
+    transition: .5s;
+    background-color: #00D4FB;
+    transform: rotate(45deg);
+}
+.item:not(:hover) .square{
+    transition: .5s;
+    background-color: #393939;
+    transform: rotate(90deg);
+}
+@keyframes anim {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.fixed{
+    position: fixed;
+    top: 0px;
+}

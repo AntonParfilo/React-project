@@ -1,0 +1,9 @@
+.char{
+    display: flex;
+    border-bottom: 1px rgb(211, 211, 211) solid;
+    margin: 20px 0;
+}
+.char_lc{
+    display: flex;
+    align-items: center;
+}
