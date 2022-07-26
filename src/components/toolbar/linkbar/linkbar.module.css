@@ -30,8 +30,13 @@
     max-width: fit-content;
 }
 .item p{
+    text-decoration: none;
+    color: #000;
     margin: 0px 20px;
     transition: .5s;
+}
+.item_wrapper a{
+    text-decoration: none;
 }
 .item:hover{
     color: #00D4FB;

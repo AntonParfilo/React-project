@@ -31,40 +31,49 @@ const LinkBar = ()=>{
     return(
         <div className={isFixed? `${s.linkbar_wrapper} ${s.fixed}` : `${s.linkbar_wrapper}`} id="linkbar" >
             <div className={s.item_wrapper} >
+                <a href="viber://chat?number=%2B380961825452">
                 <div className={s.item}>
-                <div className={s.square} ></div>
+                    <div className={s.square} ></div>                
                     <svg className={s.item_img}>
                         <use xlinkHref="/img/toolbar/viber.svg#viber"></use>
                     </svg>
                     <p>Viber</p>
                 </div>
+                </a>
+                
             </div>
             <div className={s.item_wrapper} >
-            <div className={s.item}>
+                <a href="https://t.me/Anton_Parfilo">
+                    <div className={s.item}>
+                        <div className={s.square} ></div>
+                        <svg className={s.item_img}>
+                            <use xlinkHref="/img/toolbar/telegram.svg#telegram"></use>
+                        </svg>
+                        <p>Telegram</p>
+                    </div>
+                </a>
+            </div>
+            <div className={s.item_wrapper} >
+            <a href="mailto:anton.parfilo@gmail.com">
+                <div className={s.item}>
                 <div className={s.square} ></div>
-                <svg className={s.item_img}>
-                    <use xlinkHref="/img/toolbar/telegram.svg#telegram"></use>
-                </svg>
-                <p>Telegram</p>
-            </div>
-            </div>
-            <div className={s.item_wrapper} >
-            <div className={s.item}>
-            <div className={s.square} ></div>
-                <svg className={s.item_img}>
-                    <use xlinkHref="/img/toolbar/gmail.svg#gmail"></use>
-                </svg>
-                <p>Gmail</p>
-            </div>
+                    <svg className={s.item_img}>
+                        <use xlinkHref="/img/toolbar/gmail.svg#gmail"></use>
+                    </svg>
+                    <p>Gmail</p>
+                </div>
+            </a>    
             </div>
             <div className={s.item_wrapper} >
-            <div className={s.item}>
-            <div className={s.square} ></div>
-                <svg className={s.item_img}>
-                    <use xlinkHref="/img/toolbar/github.svg#github"></use>
-                </svg>
-                <p>GitHub</p>
-            </div>
+            <a href="https://github.com/ragaban/">
+                <div className={s.item}>
+                <div className={s.square} ></div>
+                    <svg className={s.item_img}>
+                        <use xlinkHref="/img/toolbar/github.svg#github"></use>
+                    </svg>
+                    <p>GitHub</p>
+                </div>
+            </a>
             </div>
         </div>
     )
