@@ -8,10 +8,19 @@ import { useNavigate } from "react-router-dom";
 const Product = function (props) {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    function up() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+          });
+    }
     const addProductToCart = () => {
+        up();
         dispatch(addToCart(props.product));
     }
     const goToProduct = () => {
+        up();
         navigate("/product?id="+props.product.id);
     }
     return(

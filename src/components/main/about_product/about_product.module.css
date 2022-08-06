@@ -57,3 +57,9 @@
 .rc, .lc{
     margin-top: 30px;
 }
+@media (max-width: 362px) {
+    .rc_header button{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+  }

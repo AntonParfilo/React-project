@@ -27,7 +27,15 @@ const AboutProduct = () => {
   const products_main = productsCategory.map((el) => {
     return <Product product={el} dispatch={dispatch} key={el.id} />;
   }); 
+  function up() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+}
   const addProductToCart = () => {
+    up();
     dispatch(addToCart(product));
   }
   const goBuy = () => {

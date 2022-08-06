@@ -18,11 +18,11 @@ const Footer = ()=>{
                 </div>
             </div>
             <div className={`${s.cc} col-md-4`} >
-                <div>
+                <div className={s.footer_call}>
                     <img src="/img/footer/call.png" alt="call" />
                     <h3>0 800 505 555</h3>
                 </div>
-                <div>
+                <div className={s.footer_call}>
                     <img src="/img/footer/call.png" alt="call" />
                     <h3>0 800 303 333</h3>
                 </div>
