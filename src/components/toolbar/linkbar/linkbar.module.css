@@ -1,5 +1,5 @@
 .linkbar_wrapper{
-    padding: 20px;
+    padding-left: 20px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@
 .item_wrapper{
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
+    transition: 0.5s;
 }
 .item_img{
     width: 20px;
@@ -17,8 +18,8 @@
     fill: #fff;
 }
 .square{
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 8px;
     background-color: #393939;
 }

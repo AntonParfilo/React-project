@@ -8,6 +8,7 @@ import { setMenu } from "../../redux/menuSlice";
 const Navbar = (props) => {
   let num_cart = useSelector(state => state.cart).length;
   const dispatch = useDispatch();
+  
   function func(){
     setTimeout(()=>{dispatch(setMenu(false))},500);
   }
@@ -41,16 +42,6 @@ const Navbar = (props) => {
           О проекте
         </NavLink>
       </div>
-      {/* <div>
-        <NavLink
-          to="/feedback"
-          className={({ isActive }) =>
-            isActive ? `${s.nav_bar_item} ${s.active}` : s.nav_bar_item
-          }
-        >
-          Обратная связь
-        </NavLink>
-      </div> */}
       <div className={s.nav_cart}>
         <NavLink to="/cart">
           <p className={s.cart_value}>{num_cart? num_cart : ``}</p>
