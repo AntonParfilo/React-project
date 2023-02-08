@@ -30,8 +30,12 @@
 }
 .product_title{
     cursor: pointer;
+    font-size: 14px !important;
 }
 .price{
     color: #EF2809;
     font-weight: bold;
+}
+.product p{
+    font-size: 13px;
 }
